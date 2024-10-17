@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Peddy - Pet Adoption Platform</title>
+		<!-- tailwind and daisyui cdn -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- font awesome cdn -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- lato font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="shortcut icon" href="images/logo.webp" />
+		<style>
+			.lato {
+				font-family: "Lato", sans-serif;
+				font-style: normal;
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			.mar {
+				margin-top: 0rem !important;
+			}
+		</style>
+	</head>
+
+	<body class="lato">
+		<header class="max-w-[85%] mx-auto max-sm:max-w-[95%] max-sm:mb-9">
+			<!-- navbar starts -->
+			<nav>
+				<div class="navbar bg-base-100">
+					<div class="navbar-start">
+						<div class="btn btn-ghost text-2xl">
+							<img class="h-6" src="./images/logo.webp" alt="" />
+							Peddy
+						</div>
+					</div>
+					<div class="navbar-center hidden lg:flex">
+						<ul class="menu menu-horizontal px-1">
+							<li class="text-gray-400 hover:text-black"><a>Home</a></li>
+							<li class="text-gray-400 hover:text-black"><a>Shop</a></li>
+							<li class="text-gray-400 hover:text-black"><a>Contact</a></li>
+						</ul>
+					</div>
+					<div class="navbar-end">
+						<div class="btn btn-ghost h-fit">
+							<img
+								class="h-8"
+								src="https://img.icons8.com/?size=100&id=114064&format=png&color=000000"
+								alt=""
+							/>
+						</div>
+						<!-- dropdown menu for small devices -->
+						<div class="dropdown">
+							<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-5 w-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 6h16M4 12h8m-8 6h16"
+									/>
+								</svg>
+							</div>
+							<ul
+								tabindex="0"
+								class="menu menu-sm dropdown-content bg-base-100 right-0 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+							>
+								<li class="text-gray-400 hover:text-black"><a>Home</a></li>
+								<li class="text-gray-400 hover:text-black"><a>Shop</a></li>
+								<li class="text-gray-400 hover:text-black"><a>Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!-- navbar ends -->
+
+			<!-- hero section starts -->
+			<div
+				class="mx-auto mt-14 max-sm:max-w-full max-md:min-w-[90%] max-lg:min-w-[80%] max-xl:min-w-[70%] max-2xl:min-w-[60%]"
+			>
+				<div class="flex flex-col justify-center items-center">
+					<h4 class="text-2xl opacity-50 font-bold mb-5 max-sm:text-xl">
+						Bringing Families Together
+					</h4>
+					<h1
+						class="text-7xl font-extrabold text-center max-sm:text-4xl max-md:text-5xl"
+					>
+						Your Path to Adoption<br />Starts Here
+					</h1>
+					<p
+						class="mb-6 mt-8 text-center opacity-70 max-sm:text-sm max-sm:mt-5 max-sm:w-[80%] max-2xl:w-[60%] 2xl:w-[60%]"
+					>
+						At Peddy, we believe that every pet deserves a loving home. Our
+						platform brings together people looking to adopt pets with animals
+						in need of care and companionship. Whether you're searching for a
+						playful kitten, a loyal dog, or a gentle rabbit, we offer a wide
+						range of pets to choose from.
+					</p>
+					<a href="#adopt-bff"
+						><button
+							class="btn sm:btn-lg bg-[#0E7A81] text-white hover:text-gray-600"
+						>
+							View More
+						</button></a
+					>
+					<img src="./images/pet.webp" alt="" />
+				</div>
+			</div>
+			<!-- hero section ends -->
+		</header>
+		<main
+			class="max-w-[85%] mx-auto space-y-9 max-sm:max-w-[95%] mt-24 mb-20 max-sm:mb-9"
+		>
+			<!-- section title and description -->
+			<div
+				id="adopt-bff"
+				class="flex flex-col justify-center items-center pt-9"
+			>
+				<h1
+					class="text-4xl font-extrabold text-center max-sm:text-2xl max-md:text-3xl"
+				>
+					Adopt Your Best Friend
+				</h1>
+				<p
+					class="mb-5 mt-8 text-center opacity-70 max-sm:text-sm max-sm:mt-5 max-sm:w-[80%] max-2xl:w-[60%] 2xl:w-[60%]"
+				>
+					At Peddy, we understand that pets are more than just animals—they're
+					family. Our mission is to connect people with their future best
+					friends, offering a simple and compassionate platform to help you find
+					the perfect pet to bring joy and companionship into your life.
+				</p>
+			</div>
+
+			<!-- btn container starts -->
+			<div
+				id="btn-container"
+				class="grid grid-cols-4 gap-7 max-sm:gap-4 mx-auto w-full max-md:grid-cols-2"
+			></div>
+			<!-- btn container ends -->
+
+			<div class="flex justify-between items-center">
+				<p class="text-2xl font-extrabold max-sm:text-lg">Best Deal For You</p>
+				<button
+					id="sort-btn"
+					class="btn bg-[#0E7A81] text-white hover:text-gray-600"
+				>
+					Sort By Price
+				</button>
+			</div>
+
+			<!-- pet adoption section starts -->
+			<div class="grid grid-cols-3 gap-6 max-sm:gap-3">
+				<!-- all pets -->
+				<div
+					id="pet-container"
+					class="h-fit grid grid-cols-3 gap-5 col-span-2 max-xl:grid-cols-2 max-md:grid-cols-1"
+				></div>
+				<!-- favorite pets -->
+				<div
+					id="fav-pets"
+					class="border-2 p-5 max-md:p-3 rounded-xl grid gap-5 grid-cols-2 max-xl:grid-cols-1 h-fit"
+				></div>
+			</div>
+			<!-- pet adoption section ends -->
+
+			<!-- modal -->
+			<dialog id="petDetails" class="modal mar"></dialog>
+
+			<!-- modal countdown -->
+			<dialog id="my_modal_5" class="modal modal-middle">
+				<div class="modal-box flex flex-col justify-center items-center gap-3">
+					<img class="h-20" src="images/icons8-handshake.gif" alt="" />
+					<h3 class="text-3xl font-bold">Congratulations!</h3>
+					<p class="py-4">Your bestfriend is on the way</p>
+					<span class="countdown font-mono text-6xl">
+						<span id="countdown" style="--value: 3"></span>
+					</span>
+				</div>
+			</dialog>
+		</main>
+		<footer class="py-24 bg-[#131313]">
+			<div
+				class="flex justify-around max-lg:flex-col max-lg:gap-8 max-w-[85%] mx-auto max-sm:max-w-[95%]"
+			>
+				<div class="mt-0">
+					<div
+						class="flex items-center gap-2 text-2xl font-bold text-white mb-9"
+					>
+						<img class="h-6" src="./images/logo.webp" alt="" />
+						Peddy
+					</div>
+					<p class="text-white leading-8">
+						Location: av. Washington 165, NY CA 54003 <br />
+						Phone: +31 85 964 47 25 <br />
+						Email: info@yourdomain.com <br />
+						Openings hours: 9.00 AM - 5.00 PM
+					</p>
+					<div class="flex gap-3 text-2xl text-white cursor-pointer mt-4">
+						<i class="fa-brands fa-facebook"></i>
+						<i class="fa-brands fa-x-twitter"></i>
+						<i class="fa-brands fa-youtube"></i>
+						<i class="fa-brands fa-instagram"></i>
+					</div>
+				</div>
+				<div class="mt-0">
+					<h2 class="text-white text-2xl font-bold mb-9">Useful Links</h2>
+					<p class="text-white leading-8">
+						Home <br />
+						About Us <br />
+						Animals <br />
+						Foundation <br />
+						Contact
+					</p>
+				</div>
+				<div class="mt-0">
+					<h2 class="text-white text-2xl font-bold mb-9">Drop a Message</h2>
+					<div class="space-y-4">
+						<input
+							type="text"
+							placeholder="Enter your email"
+							class="input input-bordered w-full bg-opacity-10"
+						/>
+						<button
+							class="btn bg-[#0E7A81] w-full text-white hover:text-gray-600"
+						>
+							Subscribe
+						</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/index.js"></script>
+	</body>
+</html>
